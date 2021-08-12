@@ -7,88 +7,93 @@
     <title>Document</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+
     <div class="container">
         <!-- bài 1 -->
         <div class="col-4 py-5">
             <form>
                 <div class="form-group">
-                  <label for="inputNum">Số thứ nhất</label>
-                  <input type="number" class="form-control" id="num1" >
-                  
-                  <label for="inputNum">Số thứ hai</label>
-                  <input type="number" class="form-control" id="num2" >
-                  <label for="inputNum">Số thứ ba</label>
-                  <input type="number" class="form-control" id="num3" >
+                  <label for="inputDays">Số ngày làm việc</label>
+                  <input type="text" class="form-control" id="inputDays" >
+
                 </div>
-                <button type="button" class="btn btn-primary" id="btnArrange">Sắp xếp</button>
+                <button type="button" class="btn btn-primary" id="btnSalary">Tính</button>
               </form>
-              <p id="txtArrange" class="alert alert-danger" ></p>
+              <p id="txtSalary" class="alert alert-danger" ></p>
 
         </div>
 
         <!-- bài 2 -->
         <div class="col-4 py-5">
-          <form>
-          <div class="form-group">
-            <label for="exampleFormControlSelect1">Chọn tên nào</label>
-            <select class="form-control" id="inputName">
-              <option value="">Chọn thành viên</option>
-              <option value="B">Bố</option>
-              <option value="M">Mẹ</option>
-              <option value="E">Em gái</option>
-              <option value="A">Anh Trai</option>
-            </select>
-          </div>
-          <button type="button" class="btn btn-primary" id="btnGreeting">Gửi lời chào</button>
-        </form>
-              <p id="txtGreeting" class="alert alert-danger" ></p>
+            <form>
+                <div class="form-group">
+                  <label for="inputNum">Số thứ nhất</label>
+                  <input type="text" class="form-control" id="x1" >
+
+                  <label for="inputNum">Số thứ hai</label>
+                  <input type="text" class="form-control" id="x2" >
+                  <label for="inputNum">Số thứ ba</label>
+                  <input type="text" class="form-control" id="x3" >
+                  <label for="inputNum">Số thứ tư</label>
+                  <input type="text" class="form-control" id="x4" >
+                  <label for="inputNum">Số thứ năm</label>
+                  <input type="text" class="form-control" id="x5" >
+                </div>
+                <button type="button" class="btn btn-primary" id="btnAverage">Tính Giá Trị Trung Bình của 5 số trên</button>
+              </form>
+              <p id="txtAverage" class="alert alert-danger" ></p>
 
         </div>
 
-
         <!-- bài 3 -->
         <div class="col-4 py-5">
-          <form>
-              <div class="form-group">
-                <label for="inputNum">Số thứ nhất</label>
-                <input type="number" class="form-control" id="so1" >
-                
-                <label for="inputNum">Số thứ hai</label>
-                <input type="number" class="form-control" id="so2" >
-                <label for="inputNum">Số thứ ba</label>
-                <input type="number" class="form-control" id="so3" >
-              </div>
-              <button type="button" class="btn btn-primary" id="btnCount">Đếm </button>
-            </form>
-            <p id="txtCount" class="alert alert-danger" ></p>
-            
+            <form>
+                <div class="form-group">
+                  <label for="inputUSD">Số tiền USD</label>
+                  <input type="text" class="form-control" id="inputUSD" >
 
-      </div>
+                </div>
+                <button type="button" class="btn btn-primary" id="btnVND">Tính số tiền VND tương ứng với số USD trên</button>
+              </form>
+              <p id="txtVND" class="alert alert-danger" ></p>
+
+        </div>
         <!-- bài 4 -->
+        <div class="col-4 py-5">
+            <form>
+                <div class="form-group">
+                  <label for="inputNum">Chiều dài</label>
+                  <input type="text" class="form-control" id="a" >
+
+                  <label for="inputNum">Chiều rộng</label>
+                  <input type="text" class="form-control" id="b" >
+                </div>
+                <button type="button" class="btn btn-primary" id="btnChuvi">Tính Chu Vi Hình Chữ Nhật</button>
+              </form>
+              <p id="txtChuvi" class="alert alert-danger" ></p>
+              <button type="button" class="btn btn-primary" id="btnDientich">Tính Diện Tích Hình Chữ Nhật</button>
+              </form>
+              <p id="txtDientich" class="alert alert-danger" ></p>
+
+        </div>
+        <!-- bài 5 -->
         <div class="col-4 py-5">
           <form>
               <div class="form-group">
-                <label for="inputNum">Cạnh thứ nhất</label>
-                <input type="number" class="form-control" id="canh1" >
-                
-                <label for="inputNum">Cạnh thứ hai</label>
-                <input type="number" class="form-control" id="canh2" >
-                <label for="inputNum">Cạnh thứ ba</label>
-                <input type="number" class="form-control" id="canh3" >
+                <label for="inputNum">Nhập số có 2 chữ số</label>
+                <input type="text" class="form-control" id="inputNum" >
+
               </div>
-              <button type="button" class="btn btn-primary" id="btnType">Loại tam giác</button>
+              <button type="button" class="btn btn-primary" id="btnSum">Tính tổng 2 ký số của số vừa nhập</button>
             </form>
-            <p id="txtType" class="alert alert-danger" ></p>
-            
+            <p id="txtSum" class="alert alert-danger" ></p>
 
       </div>
 
 
-        
     </div>
 
 
@@ -105,7 +110,5 @@
     crossorigin="anonymous"></script>
     <script src="./main.js"></script>
 
-
-
 </body>
-</html>
+</html> 
